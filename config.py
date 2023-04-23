@@ -37,7 +37,15 @@ class Settings(BaseSettings):
             )
         return v
 
-    DEBUG_SINGLESTORE_QUERIES: bool = False
+    LOG_LEVEL: str = "verbose"
+
+    @validator("LOG_LEVEL")
+    def check_log_level(cls, v, field):
+        if v not in ["verbose", "silent"]:
+            raise ValueError(
+                f"{field.name} must be either 'verbose' or 'silent'. For local development, you can use the default value in your .env '{field.name}={field.default}'"
+            )
+        return v
 
     class Config:
         case_sensitive = True

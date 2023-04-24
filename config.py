@@ -37,13 +37,13 @@ class Settings(BaseSettings):
             )
         return v
 
-    LOG_LEVEL: str = "verbose"
+    LOG_LEVEL: str = "info"
 
     @validator("LOG_LEVEL")
     def check_log_level(cls, v, field):
-        if v not in ["verbose", "silent"]:
+        if v not in ["debug", "info", "warning", "error", "critical"]:
             raise ValueError(
-                f"{field.name} must be either 'verbose' or 'silent'. For local development, you can use the default value in your .env '{field.name}={field.default}'"
+                f"{field.name} must be a standard log level. For local development, you can use the default value in your .env '{field.name}={field.default}'"
             )
         return v
 

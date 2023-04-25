@@ -1,22 +1,30 @@
-<div align="center">
-  <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="Railway Logo" width="200" />
+<div align="center" font-size="48px">
+  🪶
 </div>
 
-# FastAPI Template
+# Featherweight
 
-An example HTTP REST API built on top of [FastAPI](https://fastapi.tiangolo.com/). Easy to deploy, set up, and scale.
+A straightforward, starter HTTP REST API built on top of [FastAPI](https://fastapi.tiangolo.com/). Quick to deploy, set up, and scale.
 
 Out of the box, this starter includes lightweight implementations of the following features that are easy to extend and customize:
 
-- **REST API endpoints** - A set of REST API endpoints using standard, spec-compliant methods like `GET` & `POST`
-- **Rate Limiting** - Rate limiting to prevent abuse of your API, at configurable rates based on customizable identifiers
-- **Caching** - Caching of API responses to reduce the load on your API and improve performance
-- **Dependency Injection** - Dependency injection to easily inject dependencies into your API endpoints
-- **OpenAPI Documentation** - Automatically generated OpenAPI documentation for your API, that can be annotated and deployed alongside your code
-- **Type Hints** - Well defined requests and responses with Pydantic models and type hints
-- **Environment Variables** - Configuration of your application using environment variables that can be set in a `.env` file
+- **REST API endpoints** - a set of REST API endpoints using standard, spec-compliant methods like `GET` & `POST`
+- **Rate Limiting** - automatic prevention of abuse of your API, at configurable rates based on customizable identifiers
+- **Caching** - tiny persistence of API responses to reduce the load on your API and improve performance
+- **Dependency Injection** - invert control and share common functionality across your API
+- **OpenAPI Documentation** - automatically generated OpenAPI documentation for your API, that can be annotated and deployed alongside your code
+- **Type Hints** - well-defined requests and responses with Pydantic models and type hints
+- **Environment Variables** - configuration of your application using environment variables that can be set in a `.env` file
+
+You can extend this template to include additional functionality like:
+
+- **Popular AI Libraries** - add support for popular AI libraries like OpenAI with `poetry add openai`, with the dependency included in your `pyproject.toml` file new builds will automatically include it in your production environment
+- **Database Support** - add support for a database like PostgreSQL or MySQL, you can even spin one up alongside the rest of your Railway services
+- **Authentication** - drop in whatever authentication/authorization scheme you please
 
 ## 🚀 Quickstart
+
+The fastest way to get started is deploying to Railway which will spin up a new instance of this template connected to a GitHub repository. It will manage the networking of server code and the key-value Redis store for you, sharing connections between without any additional configuration.
 
 **Deploy on Railway in 1-click**
 
@@ -70,7 +78,7 @@ poetry run dev
 
 You should now be able to access the API at http://localhost:8000 on your machine.
 
-## 📦 Deployment
+### 📦 Deployment
 
 You can deploy this application to [Railway](https://railway.app/) connected to a GitHub repository where every new Pull Request will generate a completely new, isolated preview environment. Merges to the `main` branch are automatically built and deployed with no additional config.
 
@@ -78,11 +86,11 @@ Railway provides a free tier that you can use to deploy this application to "kic
 
 ## 📃 OpenAPI Documentation
 
-By default, FastAPI will generate an OpenAPI schema for your API. This schema is used to generate documentation for your API automatically. You can access the documentation at http://localhost:8000/docs. Your docs are made publicly available by default at `/redoc` and `/docs` when deploying your application.
+By default, FastAPI will generate an OpenAPI schema for your API. That schema is used to generate documentation for your API automatically. You can access the documentation at http://localhost:8000/docs. Your docs are made publicly available by default at `/redoc` and `/docs` when deploying your application as well.
 
 ## 🔑 Environment Variables
 
-To
+To manage a local environment from your product environment, you can use the `.env` file included in this repo as an example for how to share configurations. Railway can also help you manage these variables and will provide some for the services they manage and some of their configurations.
 
 ## 💿 Powered By
 
@@ -95,5 +103,5 @@ Built on a modern stack with the following technologies:
 
 ## 📝 Additional Resources
 
-- Visit the [FastAPI docs](https://fastapi.tiangolo.com/tutorial/) for more information about building an API .
+- Visit the [FastAPI docs](https://fastapi.tiangolo.com/tutorial/) for more information about building API's in general and structuring larger projects.
 - Railway's [docs](https://docs.railway.app/) provide more information about managing your application and exposing it to internet traffic.

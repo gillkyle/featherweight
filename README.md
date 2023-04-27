@@ -1,5 +1,5 @@
-<div align="center" font-size="48px">
-  🪶
+<div align="center">
+  <img src="https://raw.githubusercontent.com/gillkyle/images/master/featherweight-header.png" width="100% />
 </div>
 
 # Featherweight

@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/gillkyle/images/master/featherweight-header.png" width="100%" alt="Featherweight logo" />
 </div>
 
-# Featherweight
+# Featherweight (FastAPI Starter Template)
 
 A straightforward, starter HTTP REST API built on top of [FastAPI](https://fastapi.tiangolo.com/). Quick to deploy, set up, and scale.
 

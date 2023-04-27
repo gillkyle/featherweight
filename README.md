@@ -28,7 +28,7 @@ The fastest way to get started is deploying to Railway which will spin up a new 
 
 **Deploy on Railway in 1-click**
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/???)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/l2yE91?referralCode=1Apk1r)
 
 ### 🛠️ Setup & Installation
 

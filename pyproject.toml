@@ -2,7 +2,7 @@
 name = "main"
 version = "1.0.0"
 description = "FastAPI starter template with caching and rate-limiting built-in"
-authors = ["@gillkyle <kyle.robert.gill+github@gmail.com>"]
+authors = "@gillkyle <kyle.robert.gill+github@gmail.com>"
 license = "MIT"
 
 [tool.poetry.dependencies]
